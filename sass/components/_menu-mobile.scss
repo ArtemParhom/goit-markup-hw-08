@@ -1,0 +1,83 @@
+.mobile-menu {
+    @media screen and (min-width:768px){
+        display: none;
+    }
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+    background-color: #fff;
+    & li{
+        list-style: none;
+    }
+&__container {
+    padding:48px 40px;
+}
+
+&__close-button {
+    position: absolute;
+    top: 21px;
+    right: 25.33px;
+    border: none;
+    background-color: transparent;
+    
+    
+}
+&__close-icon {
+    fill: #212121;
+}
+&__nav {}
+
+&__nav-links {
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 302px;
+}
+
+&__link {
+    &:not(:last-child){
+        margin-bottom: 32px;
+    }
+    &:hover, &:focus {
+        color: $logo-color-blue;
+    }
+}
+
+&__nav-contacts {
+    color: $color-contacts-text;
+    margin-bottom: 64px;
+}
+
+&__contact-tel {
+    font-size: 34px;
+    margin-bottom: 32px;
+    &:hover,
+        &:focus {
+            color: $logo-color-blue;
+        }
+}
+
+&__contact-mail {
+    font-size: 24px;
+    &:hover,
+        &:focus {
+            color: $logo-color-blue;
+        }
+}
+
+&__nav-socials {
+    display: flex;
+    flex-wrap: wrap;
+    color: $logo-color-blue;
+    font-size: 18px;
+    font-weight: 500;
+
+}
+
+&__social {
+    padding: 0 10px;
+    &:not(:last-child) {
+            border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+}}

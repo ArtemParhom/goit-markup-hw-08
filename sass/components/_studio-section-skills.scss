@@ -1,6 +1,6 @@
 // .section-skills {}
 /*-------------section-skills-------------*/
-.section-pading {
+/*.section-pading {
     padding: 94px 0;
 }
 
@@ -72,4 +72,100 @@
             background-image: url(../images/astronaut-icon.png);
         }
 }
+*/
+.section-skills {
 
+.section-pading {}
+
+.container {}
+
+&__list {
+    list-style: none;
+    @media screen and (min-width:768px){
+       display: flex;
+       flex-wrap: wrap;
+       gap: 30px;  
+    }
+        @media screen and (min-width:1200px) { 
+            flex-wrap: nowrap;   
+        }
+}
+}
+
+.skills {}
+
+.card-skills {
+    
+    @media screen and (min-width:768px)
+    { 
+        flex-basis: 354px;
+    }
+    &::before {
+            display: block;
+            margin-bottom: 30px;
+            content: '';
+            height: 120px;
+            background-color: #F5F4FA;
+            border-radius: 4px;
+        }
+&--icon-antenna {}
+
+&__title {
+    font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        text-align: center;
+
+}
+
+&__text {
+    font-size: 14px;
+        line-height: 1.7;
+        letter-spacing: 0.03em;
+        color: $color-contacts-text;
+        &:not(last-child){
+            margin-bottom: 30px;
+            @media screen and (min-width:768px) {
+                    margin-bottom: 0;
+                }
+        }
+    
+}
+
+}
+.card-skills--icon-antenna::before,
+.card-skills--icon-clock::before,
+.card-skills--icon-diagram::before,
+.card-skills--icon-astronaut::before {
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card-skills--icon-antenna {
+    &::before {
+        background-image: url(../images/antenna-icon.png);
+
+    }
+}
+
+.card-skills--icon-clock {
+    &::before {
+        background-image: url(../images/clock-icon.png);
+
+    }
+}
+
+.card-skills--icon-diagram {
+    &::before {
+        background-image: url(../images/diagram-icon.png);
+
+    }
+}
+
+.card-skills--icon-astronaut {
+    &::before {
+        background-image: url(../images/astronaut-icon.png);
+    }
+}

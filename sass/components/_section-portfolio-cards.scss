@@ -1,7 +1,13 @@
 /*------portfolio-cards----------*/
+
 .portfolio-cards {
     padding: 94px 0;
-}
+    & .container {
+            @media screen and (min-width:768px) {
+                display: block;
+            }
+      }
+    }
 
 .portfolio-buttons {
     display: flex;
@@ -9,6 +15,7 @@
         gap: 8px;
         margin-bottom: 50px;
         list-style: none;
+        flex-wrap: wrap;
     &__button {
         background: $background-original-color;
         border-radius: 4px;
@@ -34,18 +41,25 @@
 }
 }
 
-
 .products-list {
     display: flex;
         flex-wrap: wrap;
         justify-content: center;
         gap: 30px;
         list-style: none;
+        
 }
 
 .product-card {
     background: $color-white;
+    flex-grow: 1;
+    @media screen and (min-width:480px) {
+        flex-grow: 0;
+        justify-content: space-between;
+        width: 354px;
+     }
     & img {
+        width: 100%;
         display: block;
     }
     &__link {
