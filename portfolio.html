@@ -24,14 +24,20 @@
           <a class="header__logo" href="./index.html" title="Home page"
             >Web<span>Studio</span></a
           >
-          <button type="button" class="header__mobile-menu">
-            <svg width="24" height="16">
+          <button type="button" class="header__mobile-menu js-open-menu">
+            <svg width="24" height="18.67" aria-label="Вимикач мобільного меню">
               <use
                 class="header__mob-menu-icon"
                 href="./images/icons.svg#icon-mobile-menu_24px"
               ></use>
+
+              <use
+                class="header__mob-cross-icon"
+                href="./images/icons.svg#icon-mobile-close_24px"
+              ></use>
             </svg>
           </button>
+
           <ul class="header__nav">
             <li class="header__list">
               <a class="header__link" href="./index.html" title="Studio"
@@ -117,263 +123,354 @@
             </li>
           </ul>
           <ul class="products-list portfolio-cards-list">
-            <li class="product-card portfolio-card">
-              <!-- portfolio-card це не модифікатор -->
-              <a class="product-card__link portfolio-card-link" href="#"
-                ><!--portfilio-card-link це не модифікатор  -->
-                <div class="product-card__cardimage-overlay cardimage-overlay">
-                  <!-- це не модифікатор -->
-                  <img
-                    src="./images/technocrak.jpg"
-                    alt="technocrak"
-                    width="370"
-                  />
-                  <p class="product-card__overlay-text overlay-text">
-                    <!-- це не модифікатор -->
+            <li class="product-card">
+              <a class="product-card__link" href="#">
+                <div class="product-card__cardimage-overlay">
+                  <picture>
+                    <source
+                      media="(max-width:767px)"
+                      srcset="
+                        ./images/technocrak-mobile.jpg    1x,
+                        ./images/technocrak-mobile@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width:1199px)"
+                      srcset="
+                        ./images/technocrak-tablet.jpg    1x,
+                        ./images/technocrak-tablet@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      srcset="
+                        ./images/technocrak.jpg    1x,
+                        ./images/technocrak@2x.jpg 2x
+                      "
+                      src="./images/technocrak.jpg"
+                      alt="technocrak"
+                      width="370"
+                    />
+                  </picture>
+                  <p class="product-card__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
-                <div class="product-card__borderbottom cards-borderbottom">
-                  <!-- це не модифікатор -->
+                <div class="product-card__borderbottom">
                   <h3 class="product-card__title portfolio-card-title">
-                    <!-- це не модифікатор -->
-
                     Технокряк
                   </h3>
                   <p class="product-card__text portfolio-card-text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="product-card portfolio-card">
-              <!-- portfolio-card це не модифікатор -->
-              <a class="product-card__link portfolio-card-link" href="">
-                <!--portfilio-card-link це не модифікатор  -->
-                <div class="product-card__cardimage-overlay cardimage-overlay">
-                  <!-- це не модифікатор -->
-                  <img
-                    src="./images/poster-new-orlean-vs-golden-star.jpg"
-                    alt="poster-new-orlean-vs-golden-star"
-                    width="370"
-                  />
-                  <p class="product-card__overlay-text overlay-text">
-                    <!-- це не модифікатор -->
+            <li class="product-card">
+              <a class="product-card__link" href="">
+                <div class="product-card__cardimage-overlay">
+                  <picture>
+                    <source
+                      media="(max-width:767px)"
+                      srcset="
+                        ./images/poster-new-orlean-vs-golden-star-mobile.jpg    1x,
+                        ./images/poster-new-orlean-vs-golden-star-mobile@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width:1199px)"
+                      srcset="
+                        ./images/poster-new-orlean-vs-golden-star-tablet.jpg    1x,
+                        ./images/poster-new-orlean-vs-golden-star-tablet@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      srcset="
+                        ./images/poster-new-orlean-vs-golden-star.jpg    1x,
+                        ./images/poster-new-orlean-vs-golden-star@2x.jpg 2x
+                      "
+                      src="./images/poster-new-orlean-vs-golden-star.jpg"
+                      alt="poster-new-orlean-vs-golden-star"
+                      width="370"
+                    />
+                  </picture>
+                  <p class="product-card__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
-                <div class="product-card__borderbottom cards-borderbottom">
-                  <!-- це не модифікатор -->
-                  <h3 class="product-card__title portfolio-card-title">
-                    <!-- це не модифікатор -->
-
+                <div class="product-card__borderbottom">
+                  <h3 class="product-card__title">
                     Постер New Orlean vs Golden Star
                   </h3>
-                  <p class="product-card__text portfolio-card-text">Дизайн</p>
-                  <!-- це не модифікатор -->
+                  <p class="product-card__text">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="product-card portfolio-card">
-              <!-- portfolio-card це не модифікатор -->
-              <a class="product-card__link portfolio-card-link" href="">
-                <!--portfilio-card-link це не модифікатор  -->
-                <div class="product-card__cardimage-overlay cardimage-overlay">
-                  <!-- це не модифікатор -->
-                  <img
-                    src="./images/seafood-restaurant.jpg"
-                    alt="seafood-restaurant"
-                    width="370"
-                  />
-                  <p class="product-card__overlay-text overlay-text">
-                    <!-- це не модифікатор -->
+            <li class="product-card">
+              <a class="product-card__link" href="">
+                <div class="product-card__cardimage-overlay">
+                  <picture>
+                    <source
+                      media="(max-width:767px)"
+                      srcset="
+                        ./images/seafood-restaurant-mobile.jpg    1x,
+                        ./images/seafood-restaurant-mobile@2x.jpg 2x
+                      " />
+                    <source
+                      media="(max-width:1199px)"
+                      srcset="
+                        ./images/seafood-restaurant-tablet.jpg    1x,
+                        ./images/seafood-restaurant-tablet@2x.jpg 2x
+                      " />
+                    <img
+                      srcset="
+                        ./images/seafood-restaurant.jpg    1x,
+                        ./images/seafood-restaurant@2x.jpg 2x
+                      "
+                      src="./images/seafood-restaurant.jpg"
+                      alt="seafood-restaurant"
+                      width="370"
+                  /></picture>
+                  <p class="product-card__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
-                <div class="product-card__borderbottom cards-borderbottom">
-                  <!-- це не модифікатор -->
-                  <h3 class="product-card__title portfolio-card-title">
-                    <!-- це не модифікатор -->
-                    Ресторан Seafood
-                  </h3>
-                  <p class="product-card__text portfolio-card-text">Додаток</p>
+                <div class="product-card__borderbottom">
+                  <h3 class="product-card__title">Ресторан Seafood</h3>
+                  <p class="product-card__text">Додаток</p>
                 </div>
               </a>
             </li>
-            <li class="product-card portfolio-card">
-              <!-- portfolio-card це не модифікатор -->
-              <a class="product-card__link portfolio-card-link" href="">
-                <!--portfilio-card-link це не модифікатор  -->
-                <div class="product-card__cardimage-overlay cardimage-overlay">
-                  <!-- це не модифікатор -->
-                  <img
-                    src="./images/project-prime.jpg"
-                    alt="project-prime"
-                    width="370"
-                  />
-                  <p class="product-card__overlay-text overlay-text">
-                    <!-- це не модифікатор -->
+            <li class="product-card">
+              <a class="product-card__link" href="">
+                <div class="product-card__cardimage-overlay">
+                  <picture>
+                    <source
+                      media="(max-width:767px)"
+                      srcset="
+                        ./images/project-prime-mobile.jpg    1x,
+                        ./images/project-prime-mobile@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width:1199px)"
+                      srcset="
+                        ./images/project-prime-tablet.jpg    1x,
+                        ./images/project-prime-tablet@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      srcset="
+                        ./images/project-prime.jpg    1x,
+                        ./images/project-prime@2x.jpg 2x
+                      "
+                      src="./images/project-prime.jpg"
+                      alt="project-prime"
+                      width="370"
+                    />
+                  </picture>
+                  <p class="product-card__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
-                <div class="product-card__borderbottom cards-borderbottom">
-                  <!-- це не модифікатор -->
-                  <h3 class="product-card__title portfolio-card-title">
-                    <!-- це не модифікатор -->
-                    Проєкт Prime
-                  </h3>
-                  <p class="product-card__text portfolio-card-text">
-                    Маркетинг
-                  </p>
+                <div class="product-card__borderbottom">
+                  <h3 class="product-card__title">Проєкт Prime</h3>
+                  <p class="product-card__text">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="product-card portfolio-card">
-              <!-- portfolio-card це не модифікатор -->
-              <a class="product-card__link portfolio-card-link" href="">
-                <!--portfilio-card-link це не модифікатор  -->
-                <div class="product-card__cardimage-overlay cardimage-overlay">
-                  <!-- це не модифікатор -->
-                  <img
-                    src="./images/boxes-project.jpg"
-                    alt="boxes-project"
-                    width="370"
-                  />
-                  <p class="product-card__overlay-text overlay-text">
-                    <!-- це не модифікатор -->
+            <li class="product-card">
+              <a class="product-card__link" href="">
+                <div class="product-card__cardimage-overlay">
+                  <picture>
+                    <source
+                      media="(max-width:767px)"
+                      srcset="
+                        ./images/boxes-project-mobile.jpg    1x,
+                        ./images/boxes-project-mobile@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width:1199px)"
+                      srcset="
+                        ./images/boxes-project-tablet.jpg    1x,
+                        ./images/boxes-project-tablet@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      srcset="
+                        ./images/boxes-project.jpg    1x,
+                        ./images/boxes-project@2x.jpg 2x
+                      "
+                      src="./images/boxes-project.jpg"
+                      alt="boxes-project"
+                      width="370"
+                    />
+                  </picture>
+                  <p class="product-card__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
-                <div class="product-card__borderbottom cards-borderbottom">
-                  <!-- це не модифікатор -->
-                  <h3 class="product-card__title portfolio-card-title">
-                    <!-- це не модифікатор -->
-                    Проєкт Boxes
-                  </h3>
-                  <p class="product-card__text portfolio-card-text">Додаток</p>
+                <div class="product-card__borderbottom">
+                  <h3 class="product-card__title">Проєкт Boxes</h3>
+                  <p class="product-card__text">Додаток</p>
                 </div>
               </a>
             </li>
-            <li class="product-card portfolio-card">
-              <!-- portfolio-card це не модифікатор -->
-              <a class="product-card__link portfolio-card-link" href="">
-                <!--portfilio-card-link це не модифікатор  -->
-                <div class="product-card__cardimage-overlay cardimage-overlay">
-                  <!-- це не модифікатор -->
-                  <img
-                    src="./images/inspiration-has-no-borders.jpg"
-                    alt="inspiration-has-no-borders"
-                    width="370"
-                  />
-                  <p class="product-card__overlay-text overlay-text">
-                    <!-- це не модифікатор -->
+            <li class="product-card">
+              <a class="product-card__link" href="">
+                <div class="product-card__cardimage-overlay">
+                  <picture>
+                    <source
+                      media="(max-width:767px)"
+                      srcset="
+                        ./images/inspiration-has-no-borders-mobile.jpg    1x,
+                        ./images/inspiration-has-no-borders-mobile@2x.jpg 2x
+                      " />
+                    <source
+                      media="(max-width:1199px)"
+                      srcset="
+                        ./images/inspiration-has-no-borders-tablet.jpg    1x,
+                        ./images/inspiration-has-no-borders-tablet@2x.jpg 2x
+                      " />
+                    <img
+                      srcset="
+                        ./images/inspiration-has-no-borders.jpg    1x,
+                        ./images/inspiration-has-no-borders@2x.jpg 2x
+                      "
+                      src="./images/inspiration-has-no-borders.jpg"
+                      alt="inspiration-has-no-borders"
+                      width="370"
+                  /></picture>
+                  <p class="product-card__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
-                <div class="product-card__borderbottom cards-borderbottom">
-                  <!-- це не модифікатор -->
-                  <h3 class="product-card__title portfolio-card-title">
-                    <!-- це не модифікатор -->
-
+                <div class="product-card__borderbottom">
+                  <h3 class="product-card__title">
                     Inspiration has no Borders
                   </h3>
-                  <p class="product-card__text portfolio-card-text">Веб-сайт</p>
+                  <p class="product-card__text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="product-card portfolio-card">
-              <!-- portfolio-card це не модифікатор -->
-              <a class="product-card__link portfolio-card-link" href="">
-                <!--portfilio-card-link це не модифікатор  -->
-                <div class="product-card__cardimage-overlay cardimage-overlay">
-                  <!-- це не модифікатор -->
-                  <img
-                    src="./images/edition-limited-edition.jpg"
-                    alt="edition-limited-edition"
-                    width="370"
-                  />
-                  <p class="product-card__overlay-text overlay-text">
-                    <!-- це не модифікатор -->
+            <li class="product-card">
+              <a class="product-card__link" href="">
+                <div class="product-card__cardimage-overlay">
+                  <picture>
+                    <source
+                      media="(max-width:767px)"
+                      srcset="
+                        ./images/edition-limited-edition-mobile.jpg    1x,
+                        ./images/edition-limited-edition-mobile@2x.jpg 2x
+                      " />
+                    <source
+                      media="(max-width:1199px)"
+                      srcset="
+                        ./images/edition-limited-edition-tablet.jpg    1x,
+                        ./images/edition-limited-edition-tablet@2x.jpg 2x
+                      " />
+                    <img
+                      srcset="
+                        ./images/edition-limited-edition.jpg    1x,
+                        ./images/edition-limited-edition@2x.jpg 2x
+                      "
+                      src="./images/edition-limited-edition.jpg"
+                      alt="edition-limited-edition"
+                      width="370"
+                  /></picture>
+                  <p class="product-card__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
-                <div class="product-card__borderbottom cards-borderbottom">
-                  <!-- це не модифікатор -->
-                  <h3 class="product-card__title portfolio-card-title">
-                    <!-- це не модифікатор -->
-                    Видання Limited Edition
-                  </h3>
-                  <p class="product-card__text portfolio-card-text">Дизайн</p>
+                <div class="product-card__borderbottom">
+                  <h3 class="product-card__title">Видання Limited Edition</h3>
+                  <p class="product-card__text">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="product-card portfolio-card">
-              <!-- portfolio-card це не модифікатор -->
-              <a class="product-card__link portfolio-card-link" href="">
-                <!--portfilio-card-link це не модифікатор  -->
-                <div class="product-card__cardimage-overlay cardimage-overlay">
-                  <!-- це не модифікатор -->
-                  <img
-                    src="./images/lab-project.jpg"
-                    alt="lab-project"
-                    width="370"
-                  />
-                  <p class="product-card__overlay-text overlay-text">
-                    <!-- це не модифікатор -->
+            <li class="product-card">
+              <a class="product-card__link" href="">
+                <div class="product-card__cardimage-overlay">
+                  <picture>
+                    <source
+                      media="(max-width:767px)"
+                      srcset="
+                        ./images/lab-project-mobile.jpg    1x,
+                        ./images/lab-project-mobile@2x.jpg 2x
+                      " />
+                    <source
+                      media="(max-width:1199px)"
+                      srcset="
+                        ./images/lab-project-tablet.jpg    1x,
+                        ./images/lab-project-tablet@2x.jpg 2x
+                      " />
+                    <img
+                      srcset="
+                        ./images/lab-project.jpg    1x,
+                        ./images/lab-project@2x.jpg 2x
+                      "
+                      src="./images/lab-project.jpg"
+                      alt="lab-project"
+                      width="370"
+                  /></picture>
+                  <p class="product-card__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
-                <div class="product-card__borderbottom cards-borderbottom">
-                  <!-- це не модифікатор -->
-                  <h3 class="product-card__title portfolio-card-title">
-                    <!-- це не модифікатор -->
-                    Проєкт LAB
-                  </h3>
-                  <p class="product-card__text portfolio-card-text">
-                    Маркетинг
-                  </p>
+                <div class="product-card__borderbottom">
+                  <h3 class="product-card__title">Проєкт LAB</h3>
+                  <p class="product-card__text">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="product-card portfolio-card">
-              <!-- portfolio-card це не модифікатор -->
-              <a class="product-card__link portfolio-card-link" href="">
-                <!--portfilio-card-link це не модифікатор  -->
-                <div class="product-card__cardimage-overlay cardimage-overlay">
-                  <!-- це не модифікатор -->
-                  <img
-                    src="./images/growing-business.jpg"
-                    alt="growing-business"
-                    width="370"
-                  />
-                  <p class="product-card__overlay-text overlay-text">
-                    <!-- це не модифікатор -->
+            <li class="product-card">
+              <a class="product-card__link" href="">
+                <div class="product-card__cardimage-overlay">
+                  <picture>
+                    <source
+                      media="(max-width:767px)"
+                      srcset="
+                        ./images/growing-business-mobile.jpg    1x,
+                        ./images/growing-business-mobile@2x.jpg 2x
+                      " />
+                    <source
+                      media="(max-width:1199px)"
+                      srcset="
+                        ./images/growing-business-tablet.jpg    1x,
+                        ./images/growing-business-tablet@2x.jpg 2x
+                      " />
+                    <img
+                      srcset="
+                        ./images/growing-business.jpg    1x,
+                        ./images/growing-business@2x.jpg 2x
+                      "
+                      src="./images/growing-business.jpg"
+                      alt="growing-business"
+                      width="370"
+                  /></picture>
+                  <p class="product-card__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
-                <div class="product-card__borderbottom cards-borderbottom">
-                  <!-- це не модифікатор -->
-                  <h3 class="product-card__title portfolio-card-title">
-                    <!-- це не модифікатор -->
-                    Growing Business
-                  </h3>
-                  <p class="product-card__text portfolio-card-text">Додаток</p>
+                <div class="product-card__borderbottom">
+                  <h3 class="product-card__title">Growing Business</h3>
+                  <p class="product-card__text">Додаток</p>
                 </div>
               </a>
             </li>
@@ -383,7 +480,7 @@
     </main>
     <footer class="page-footer">
       <div class="container">
-        <div>
+        <div class="page-footer__box">
           <a class="page-footer__logo" href="./index.html" title="Home page"
             >Web<span>Studio</span></a
           >
@@ -489,5 +586,69 @@
         </form>
       </div>
     </footer>
+    <div class="mobile-menu js-menu-container">
+      <div class="mobile-menu__container">
+        <button type="button" class="mobile-menu__close-button js-close-menu">
+          <svg width="18.7px" height="18.7px">
+            <use
+              class="mobile-menu__close-icon"
+              href="./images/icons.svg#icon-mobile-close_24px"
+            ></use>
+          </svg>
+        </button>
+        <nav class="mobile-menu__nav">
+          <ul class="mobile-menu__nav-links">
+            <li class="mobile-menu__link">
+              <a
+                class="header__link mobile-menu__link--hover"
+                href="./index.html"
+                title="Portfolio"
+                >Студія</a
+              >
+            </li>
+            <li class="mobile-menu__link">
+              <a
+                class="header__link mobile-menu__link--hover mobile-menu__link--focus"
+                href="./portfolio.html"
+                title="Portfolio"
+                >Портфоліо</a
+              >
+              <!-- 13. На сторінці порфтоліо не відкривається моб меню -->
+            </li>
+            <li class="mobile-menu__link">
+              <a
+                class="header__link mobile-menu__link--hover"
+                href="#"
+                title="Contacts"
+                >Контакти</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-menu__nav-contacts">
+            <li class="mobile-menu__contact-tel">
+              <a
+                class="link-contact mobile-menu__link-tel--hover"
+                href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li class="mobile-menu__contact-mail">
+              <a
+                class="link-contact mobile-menu__link-mail--hover"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-menu__nav-socials">
+            <li class="mobile-menu__social"><a href="#">Instagram</a></li>
+            <li class="mobile-menu__social"><a href="#">Twitter</a></li>
+            <li class="mobile-menu__social"><a href="#">Facebook</a></li>
+            <li class="mobile-menu__social"><a href="#">LinkedIn</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

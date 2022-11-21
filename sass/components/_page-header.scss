@@ -108,9 +108,14 @@
 // }
 /*--------mobile-<480px----------*/
 .header {
-    border-bottom: 1px solid #ECECEC;
-    
-    
+        border-bottom: 1px solid #ECECEC;
+        padding: 16px 0;
+    @media screen and (min-width:"768px") {
+            padding: 21px 0;
+        }
+    @media screen and (min-width:"1200px"){
+        padding: 26px 0;
+    }
     &__menu{
         position: relative;
         @media screen and (min-width:"768px"){

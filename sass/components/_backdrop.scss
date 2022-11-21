@@ -21,7 +21,6 @@
         padding: 40px;
         background-color: #FFFFFF;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-
         transform: translate(-50%, -50%);
         @media screen and (min-width:"480px") {
                 width: 450px;
@@ -133,13 +132,17 @@
 .conditionss {
         height: 24px;
         margin-bottom: 30px;
-        text-align: center;
+        
 
     &__lable {
-        font-size: 14px;
+        font-size: 12px;
+        /*7. Підправте лейбл з посиланням за макетом на мобілці і таблеті - https: //i.imgur.com/NobNpk5.png*/
         line-height: 24px;
         letter-spacing: 0.03em;
         color: $color-contacts-text;
+        @media screen and (min-width:1200px) {
+                font-size: 14px;
+            }
 }
 
     &__checkbox {
@@ -165,12 +168,16 @@
 }
 
     &__link {
-        font-size: 14px;
+        font-size: 12px;
+        /*7. Підправте лейбл з посиланням за макетом на мобілці і таблеті - https: //i.imgur.com/NobNpk5.png*/
         line-height: 26px;
         letter-spacing: 0.03em;
         color: $logo-color-blue;
         text-decoration: none;
         border-bottom: 0.5px solid $logo-color-blue;
+        @media screen and (min-width:1200px){ 
+            font-size: 14px;
+        }
 }
 }
 .button-modal {

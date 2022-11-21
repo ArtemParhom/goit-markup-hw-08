@@ -98,7 +98,7 @@
     
     @media screen and (min-width:768px)
     { 
-        flex-basis: 354px;
+        flex-basis: calc((100% - 30px) / 2);
     }
     &::before {
             display: block;

@@ -1,6 +1,7 @@
 /*---------------container----------*/
 .container {
-    padding: 16px 15px;
+    padding: 0 15px; 
+    // 1. Для .container не потрібно задавати верхній і нижній паддинги. Для контейнеру задаються лише бокові паддинги
         margin: 0 auto;
         
     
@@ -9,8 +10,7 @@
         }
     
         @media screen and (min-width:"768px") {
-            max-width: 768px;
-            padding: 21px 15px;
+            max-width: 768px; 
             align-items: center;
             display: flex;
             
@@ -18,6 +18,6 @@
         
         @media screen and (min-width:"1200px") {
             max-width: 1200px;
-            padding: 26px 15px;
+            
         }
     }

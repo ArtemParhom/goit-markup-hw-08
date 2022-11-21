@@ -132,15 +132,30 @@
 
           <ul class="section-images__list">
             <li class="image">
-              <img src="./images/imgone.jpg" alt="computer" width="370" />
+              <img
+                srcset="./images/imgone.jpg 1x, ./images/imgone@2x.jpg 2x"
+                src="./images/imgone.jpg"
+                alt="computer"
+                width="370"
+              />
               <h3 class="image__subtitle">Десктопні додатки</h3>
             </li>
             <li class="image">
-              <img src="./images/imgtwo.jpg" alt="smartphone" width="370" />
+              <img
+                srcset="./images/imgtwo.jpg 1x, ./images/imgtwo@2x.jpg 2x"
+                src="./images/imgtwo.jpg"
+                alt="smartphone"
+                width="370"
+              />
               <h3 class="image__subtitle">Мобільні додатки</h3>
             </li>
             <li class="image">
-              <img src="./images/imgthree.jpg" alt="tablet" width="370" />
+              <img
+                srcset="./images/imgthree.jpg 1x, ./images/imgthree@2x.jpg 2x"
+                src="./images/imgthree.jpg"
+                alt="tablet"
+                width="370"
+              />
               <h3 class="image__subtitle">Дизайнерські рішення</h3>
             </li>
           </ul>
@@ -152,12 +167,34 @@
 
           <ul class="section-team__list">
             <li class="card">
-              <img
-                class="card__image"
-                src="./images/imgigordemyanenko.jpg"
-                alt="Product Designer"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(max-width:767px)"
+                  srcset="
+                    ./images/imgigordemyanenko-mobile.jpg    1x,
+                    ./images/imgigordemyanenko-mobile@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(max-width:1199px)"
+                  srcset="
+                    ./images/imgigordemyanenko-tablet.jpg    1x,
+                    ./images/imgigordemyanenko-tablet@2x.jpg 2x
+                  "
+                />
+
+                <img
+                  class="card__image"
+                  srcset="
+                    ./images/imgigordemyanenko.jpg    1x,
+                    ./images/imgigordemyanenko@2x.jpg 2x
+                  "
+                  src="./images/imgigordemyanenko.jpg"
+                  alt="Product Designer"
+                  width="270"
+                />
+              </picture>
               <h3 class="card__title">Ігор Дем'яненко</h3>
 
               <p class="card__text">Product Designer</p>
@@ -194,12 +231,31 @@
               </ul>
             </li>
             <li class="card">
-              <img
-                class="card__image"
-                src="./images/imgolgarepina.jpg"
-                alt="Frontend Developer"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(max-width:767px)"
+                  srcset="
+                    ./images/imgolgarepina-mobile.jpg    1x,
+                    ./images/imgolgarepina-mobile@2x.jpg 2x
+                  " />
+
+                <source
+                  media="(max-width:1199px)"
+                  srcset="
+                    ./images/imgolgarepina-tablet.jpg    1x,
+                    ./images/imgolgarepina-tablet@2x.jpg 2x
+                  " />
+
+                <img
+                  class="card__image"
+                  srcset="
+                    ./images/imgolgarepina.jpg    1x,
+                    ./images/imgolgarepina@2x.jpg 2x
+                  "
+                  src="./images/imgolgarepina.jpg"
+                  alt="Frontend Developer"
+                  width="270"
+              /></picture>
               <h3 class="card__title">Ольга Рєпіна</h3>
 
               <p class="card__text">Frontend Developer</p>
@@ -236,12 +292,31 @@
               </ul>
             </li>
             <li class="card">
-              <img
-                class="card__image"
-                src="./images/imgmikolatarasov.jpg"
-                alt="Marketing"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(max-width:767px)"
+                  srcset="
+                    ./images/imgmikolatarasov-mobile.jpg    1x,
+                    ./images/imgmikolatarasov-mobile@2x.jpg 2x
+                  " />
+
+                <source
+                  media="(max-width:1199px)"
+                  srcset="
+                    ./images/imgmikolatarasov-tablet.jpg    1x,
+                    ./images/imgmikolatarasov-tablet@2x.jpg 2x
+                  " />
+
+                <img
+                  class="card__image"
+                  srcset="
+                    ./images/imgmikolatarasov.jpg    1x,
+                    ./images/imgmikolatarasov@2x.jpg 2x
+                  "
+                  src="./images/imgmikolatarasov.jpg"
+                  alt="Marketing"
+                  width="270"
+              /></picture>
               <h3 class="card__title">Микола Тарасов</h3>
 
               <p class="card__text card-text">Marketing</p>
@@ -278,12 +353,31 @@
               </ul>
             </li>
             <li class="card">
-              <img
-                class="card__image"
-                src="./images/imgmihailoermakob.jpg"
-                alt="UI Designer"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(max-width:767px)"
+                  srcset="
+                    ./images/imgmihailoermakob-mobile.jpg    1x,
+                    ./images/imgmihailoermakob-mobile@2x.jpg 2x
+                  " />
+
+                <source
+                  media="(max-width:1199px)"
+                  srcset="
+                    ./images/imgmihailoermakob-tablet.jpg    1x,
+                    ./images/imgmihailoermakob-tablet@2x.jpg 2x
+                  " />
+
+                <img
+                  class="card__image"
+                  srcset="
+                    ./images/imgmihailoermakob.jpg    1x,
+                    ./images/imgmihailoermakob@2x.jpg 2x
+                  "
+                  src="./images/imgmihailoermakob.jpg"
+                  alt="UI Designer"
+                  width="270"
+              /></picture>
               <h3 class="card__title">Михайло Єрмаков</h3>
 
               <p class="card__text">UI Designer</p>
@@ -495,7 +589,7 @@
           <ul class="mobile-menu__nav-links">
             <li class="mobile-menu__link">
               <a
-                class="header__link mobile-menu__link--hover"
+                class="header__link mobile-menu__link--hover mobile-menu__link--focus"
                 href="./index.html"
                 title="Portfolio"
                 >Студія</a
