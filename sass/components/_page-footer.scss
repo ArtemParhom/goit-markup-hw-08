@@ -170,7 +170,7 @@
 .page-footer {
         background: $background-footer-color;
         padding: 60px 0;
-    /*3. Для .page-footer на десктопі потрібні верхній і нижній паддинги. Вони потрібні для усіх пристроїв*/
+    
     @media screen and (min-width:1200px) {
             
         }
@@ -178,7 +178,7 @@
     .container {
         @media screen and (min-width:768px) {
             flex-wrap: wrap;
-            justify-content: center; /*9. Підправте футер за макетом для таблету - https: //i.imgur.com/193wCTm.png*/
+            justify-content: center; 
             }
         @media screen and (min-width:1200px) {
             display: flex;
@@ -188,7 +188,7 @@
                 }
     }
     &__box{
-       /* margin-bottom: 60px;*/ /*4. Для .page-footer__box на десктопі не потрібен нижній марджин*/
+       
         @media screen and (min-width:768px) {
             display: inline-block;
             margin-right: 165px;
@@ -271,7 +271,7 @@
                 display: inline-block;
                 }
         @media screen and (min-width:1200px) {margin: 12px 0 0 0;
-            /*5. Розташування посилань на соц мережі підправте за макетом - https: //i.imgur.com/1Ab8tYV.png*/
+            
                         }
     &__title {
         display: block;
@@ -285,6 +285,8 @@
         font-weight: 700;
         @media screen and (min-width:1200px) {
                 margin-bottom: 20px;
+                text-align: start;
+                /*2. Для .footer-social__title на десктопі не потрібно центрувати*/
             }
     }
 }
